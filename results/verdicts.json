@@ -1,0 +1,230 @@
+{
+  "honest@0.0": {
+    "decision": "ACCEPT",
+    "cause": "honest",
+    "instruments": {
+      "signature": {
+        "s_pooled": 0.0,
+        "accepted": true
+      },
+      "chsh": {
+        "S": 2.7861889756945883,
+        "sigma": 0.09067974896848895,
+        "secure": true,
+        "violates": true
+      },
+      "fingerprint": {
+        "e": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "n": {
+          "X": 863,
+          "Y": 885,
+          "Z": 812
+        },
+        "verdict": "honest",
+        "best": "honest",
+        "best_p": 1.0,
+        "runner_up": "phase_damping",
+        "runner_up_p": 6.24767775336151e-08
+      }
+    },
+    "reasons": [
+      "Signature mismatch s = 0.000 (below s_a)",
+      "CHSH S = 2.786 \u00b1 0.091 (entanglement intact)",
+      "Fingerprint: best honest (p=1.000), runner-up phase_damping (p=0.000)"
+    ]
+  },
+  "depolarising@0.15": {
+    "decision": "REJECT",
+    "cause": "depolarising",
+    "instruments": {
+      "signature": {
+        "s_pooled": 0.0859375,
+        "accepted": true
+      },
+      "chsh": {
+        "S": 2.368512721077018,
+        "sigma": 0.10197219446082414,
+        "secure": false,
+        "violates": true
+      },
+      "fingerprint": {
+        "e": {
+          "X": 0.09154113557358054,
+          "Y": 0.0847457627118644,
+          "Z": 0.06896551724137931
+        },
+        "n": {
+          "X": 863,
+          "Y": 885,
+          "Z": 812
+        },
+        "verdict": "depolarising",
+        "best": "depolarising",
+        "best_p": 0.290380110650482,
+        "runner_up": "intercept_random",
+        "runner_up_p": 0.013797057467982626
+      }
+    },
+    "reasons": [
+      "Signature mismatch s = 0.086 (below s_a)",
+      "CHSH S = 2.369 \u00b1 0.102 (entanglement degraded)",
+      "Fingerprint: best depolarising (p=0.290), runner-up intercept_random (p=0.014)"
+    ]
+  },
+  "phase_damping@0.3": {
+    "decision": "ACCEPT",
+    "cause": "phase_damping",
+    "instruments": {
+      "signature": {
+        "s_pooled": 0.06640625,
+        "accepted": true
+      },
+      "chsh": {
+        "S": 2.5701077587376293,
+        "sigma": 0.09666555971706338,
+        "secure": true,
+        "violates": true
+      },
+      "fingerprint": {
+        "e": {
+          "X": 0.09617612977983778,
+          "Y": 0.09265536723163842,
+          "Z": 0.0
+        },
+        "n": {
+          "X": 863,
+          "Y": 885,
+          "Z": 812
+        },
+        "verdict": "phase_damping",
+        "best": "phase_damping",
+        "best_p": 0.4120809883246713,
+        "runner_up": "intercept_Z",
+        "runner_up_p": 3.2734910069444695e-09
+      }
+    },
+    "reasons": [
+      "Signature mismatch s = 0.066 (below s_a)",
+      "CHSH S = 2.570 \u00b1 0.097 (entanglement intact)",
+      "Fingerprint: best phase_damping (p=0.412), runner-up intercept_Z (p=0.000)"
+    ]
+  },
+  "intercept_Z@1.0": {
+    "decision": "REJECT",
+    "cause": "intercept_Z",
+    "instruments": {
+      "signature": {
+        "s_pooled": 0.32421875,
+        "accepted": false
+      },
+      "chsh": {
+        "S": 1.637805481579658,
+        "sigma": 0.10771533699725147,
+        "secure": false,
+        "violates": false
+      },
+      "fingerprint": {
+        "e": {
+          "X": 0.48088064889918886,
+          "Y": 0.5005649717514125,
+          "Z": 0.0
+        },
+        "n": {
+          "X": 863,
+          "Y": 885,
+          "Z": 812
+        },
+        "verdict": "intercept_Z",
+        "best": "intercept_Z",
+        "best_p": 0.9637200477868682,
+        "runner_up": "intercept_random",
+        "runner_up_p": 9.529900515548746e-140
+      }
+    },
+    "reasons": [
+      "Signature mismatch s = 0.324 (at or above s_a)",
+      "CHSH S = 1.638 \u00b1 0.108 (entanglement degraded)",
+      "Fingerprint: best intercept_Z (p=0.964), runner-up intercept_random (p=0.000)"
+    ]
+  },
+  "intercept_random@1.0": {
+    "decision": "REJECT",
+    "cause": "intercept_random",
+    "instruments": {
+      "signature": {
+        "s_pooled": 0.34765625,
+        "accepted": false
+      },
+      "chsh": {
+        "S": 1.1840321396779634,
+        "sigma": 0.12082891267950165,
+        "secure": false,
+        "violates": false
+      },
+      "fingerprint": {
+        "e": {
+          "X": 0.3302433371958285,
+          "Y": 0.3220338983050847,
+          "Z": 0.3263546798029557
+        },
+        "n": {
+          "X": 863,
+          "Y": 885,
+          "Z": 812
+        },
+        "verdict": "intercept_random",
+        "best": "intercept_random",
+        "best_p": 0.8688913028455144,
+        "runner_up": "blind_forgery",
+        "runner_up_p": 5.926606568295426e-73
+      }
+    },
+    "reasons": [
+      "Signature mismatch s = 0.348 (at or above s_a)",
+      "CHSH S = 1.184 \u00b1 0.121 (entanglement degraded)",
+      "Fingerprint: best intercept_random (p=0.869), runner-up blind_forgery (p=0.000)"
+    ]
+  },
+  "blind_forgery@1.0": {
+    "decision": "REJECT",
+    "cause": "blind_forgery",
+    "instruments": {
+      "signature": {
+        "s_pooled": 0.52734375,
+        "accepted": false
+      },
+      "chsh": {
+        "S": 2.7861889756945883,
+        "sigma": 0.09067974896848895,
+        "secure": true,
+        "violates": true
+      },
+      "fingerprint": {
+        "e": {
+          "X": 0.5092592592592593,
+          "Y": 0.5217917675544794,
+          "Z": 0.5022988505747127
+        },
+        "n": {
+          "X": 864,
+          "Y": 826,
+          "Z": 870
+        },
+        "verdict": "blind_forgery",
+        "best": "blind_forgery",
+        "best_p": 0.593593785415748,
+        "runner_up": "intercept_random",
+        "runner_up_p": 4.729401336863942e-81
+      }
+    },
+    "reasons": [
+      "Signature mismatch s = 0.527 (at or above s_a)",
+      "CHSH S = 2.786 \u00b1 0.091 (entanglement intact)",
+      "Fingerprint: best blind_forgery (p=0.594), runner-up intercept_random (p=0.000)"
+    ]
+  }
+}

@@ -1,0 +1,1051 @@
+{
+  "profiles": {
+    "honest@0.0": {
+      "condition": "honest",
+      "strength": 0.0,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "std": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "s_pooled_mean": 0.0,
+      "accept_rate": 1.0
+    },
+    "depolarising@0.05": {
+      "condition": "depolarising",
+      "strength": 0.05,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.02365560545056289,
+        "Y": 0.025687276990155824,
+        "Z": 0.027740192566873278
+      },
+      "std": {
+        "X": 0.01719187643994732,
+        "Y": 0.01814596057806422,
+        "Z": 0.018072700830278947
+      },
+      "s_pooled_mean": 0.025703125,
+      "accept_rate": 1.0
+    },
+    "depolarising@0.15": {
+      "condition": "depolarising",
+      "strength": 0.15,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.07539373834471821,
+        "Y": 0.07508442944843048,
+        "Z": 0.07482309171066726
+      },
+      "std": {
+        "X": 0.031860082406626064,
+        "Y": 0.027883810301618003,
+        "Z": 0.029118922556091144
+      },
+      "s_pooled_mean": 0.0750390625,
+      "accept_rate": 1.0
+    },
+    "phase_damping@0.1": {
+      "condition": "phase_damping",
+      "strength": 0.1,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.02461453091268019,
+        "Y": 0.02674121970504195,
+        "Z": 0.0
+      },
+      "std": {
+        "X": 0.017093073384641118,
+        "Y": 0.018549661672829745,
+        "Z": 0.0
+      },
+      "s_pooled_mean": 0.01703125,
+      "accept_rate": 1.0
+    },
+    "phase_damping@0.3": {
+      "condition": "phase_damping",
+      "strength": 0.3,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.08113527159493689,
+        "Y": 0.08249102723099126,
+        "Z": 0.0
+      },
+      "std": {
+        "X": 0.034028011348843486,
+        "Y": 0.028854920828393252,
+        "Z": 0.0
+      },
+      "s_pooled_mean": 0.054140625,
+      "accept_rate": 1.0
+    },
+    "amplitude_damping@0.1": {
+      "condition": "amplitude_damping",
+      "strength": 0.1,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.02461453091268019,
+        "Y": 0.02674121970504195,
+        "Z": 0.05249878455516781
+      },
+      "std": {
+        "X": 0.017093073384641118,
+        "Y": 0.018549661672829745,
+        "Z": 0.024963847967477217
+      },
+      "s_pooled_mean": 0.0346875,
+      "accept_rate": 1.0
+    },
+    "amplitude_damping@0.3": {
+      "condition": "amplitude_damping",
+      "strength": 0.3,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.08113527159493689,
+        "Y": 0.08249102723099126,
+        "Z": 0.15214382286571587
+      },
+      "std": {
+        "X": 0.034028011348843486,
+        "Y": 0.028854920828393252,
+        "Z": 0.039784421418578624
+      },
+      "s_pooled_mean": 0.1054296875,
+      "accept_rate": 0.97
+    },
+    "bit_flip@0.05": {
+      "condition": "bit_flip",
+      "strength": 0.05,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.0,
+        "Y": 0.04918021453053322,
+        "Z": 0.05129383741300988
+      },
+      "std": {
+        "X": 0.0,
+        "Y": 0.025180018915846935,
+        "Z": 0.026897004974270947
+      },
+      "s_pooled_mean": 0.0333984375,
+      "accept_rate": 1.0
+    },
+    "bit_flip@0.15": {
+      "condition": "bit_flip",
+      "strength": 0.15,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.0,
+        "Y": 0.15216763878671466,
+        "Z": 0.1485676262632588
+      },
+      "std": {
+        "X": 0.0,
+        "Y": 0.03952266568703406,
+        "Z": 0.03692584533340372
+      },
+      "s_pooled_mean": 0.0998828125,
+      "accept_rate": 0.99
+    },
+    "intercept_Z@0.3": {
+      "condition": "intercept_Z",
+      "strength": 0.3,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.15458850154590353,
+        "Y": 0.15365146990581707,
+        "Z": 0.0
+      },
+      "std": {
+        "X": 0.03904975002114929,
+        "Y": 0.03885161400663659,
+        "Z": 0.0
+      },
+      "s_pooled_mean": 0.102265625,
+      "accept_rate": 0.99
+    },
+    "intercept_Z@1.0": {
+      "condition": "intercept_Z",
+      "strength": 1.0,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.49096972721789567,
+        "Y": 0.49986152075330936,
+        "Z": 0.0
+      },
+      "std": {
+        "X": 0.057518993866607325,
+        "Y": 0.05527069084302001,
+        "Z": 0.0
+      },
+      "s_pooled_mean": 0.328203125,
+      "accept_rate": 0.0
+    },
+    "intercept_X@0.3": {
+      "condition": "intercept_X",
+      "strength": 0.3,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.0,
+        "Y": 0.15365146990581707,
+        "Z": 0.15321791415800334
+      },
+      "std": {
+        "X": 0.0,
+        "Y": 0.03885161400663659,
+        "Z": 0.042533750499429784
+      },
+      "s_pooled_mean": 0.1023046875,
+      "accept_rate": 0.99
+    },
+    "intercept_X@1.0": {
+      "condition": "intercept_X",
+      "strength": 1.0,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.0,
+        "Y": 0.49986152075330936,
+        "Z": 0.5009721388264904
+      },
+      "std": {
+        "X": 0.0,
+        "Y": 0.05527069084302001,
+        "Z": 0.05704901367057461
+      },
+      "s_pooled_mean": 0.3328125,
+      "accept_rate": 0.0
+    },
+    "intercept_Y@0.3": {
+      "condition": "intercept_Y",
+      "strength": 0.3,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.15458850154590353,
+        "Y": 0.0,
+        "Z": 0.15321791415800334
+      },
+      "std": {
+        "X": 0.03904975002114929,
+        "Y": 0.0,
+        "Z": 0.042533750499429784
+      },
+      "s_pooled_mean": 0.1035546875,
+      "accept_rate": 0.99
+    },
+    "intercept_Y@1.0": {
+      "condition": "intercept_Y",
+      "strength": 1.0,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.49096972721789567,
+        "Y": 0.0,
+        "Z": 0.5009721388264904
+      },
+      "std": {
+        "X": 0.057518993866607325,
+        "Y": 0.0,
+        "Z": 0.05704901367057461
+      },
+      "s_pooled_mean": 0.33328125,
+      "accept_rate": 0.0
+    },
+    "intercept_random@0.3": {
+      "condition": "intercept_random",
+      "strength": 0.3,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.10373806188042677,
+        "Y": 0.10349355530868343,
+        "Z": 0.09916794219737465
+      },
+      "std": {
+        "X": 0.036043649300167624,
+        "Y": 0.034764432903140595,
+        "Z": 0.03422577971242623
+      },
+      "s_pooled_mean": 0.1020703125,
+      "accept_rate": 0.99
+    },
+    "intercept_random@1.0": {
+      "condition": "intercept_random",
+      "strength": 1.0,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.3342375429829699,
+        "Y": 0.32782052177257065,
+        "Z": 0.3379517494833766
+      },
+      "std": {
+        "X": 0.04855072042018385,
+        "Y": 0.04710605546435281,
+        "Z": 0.048318511556526174
+      },
+      "s_pooled_mean": 0.3330078125,
+      "accept_rate": 0.0
+    },
+    "blind_forgery@1.0": {
+      "condition": "blind_forgery",
+      "strength": 1.0,
+      "n_runs": 100,
+      "seed": 20260101,
+      "key_length": 256,
+      "mean": {
+        "X": 0.5057341367621511,
+        "Y": 0.4978063481114101,
+        "Z": 0.5001904825134283
+      },
+      "std": {
+        "X": 0.047195838673756776,
+        "Y": 0.053307361527004854,
+        "Z": 0.04883068089355261
+      },
+      "s_pooled_mean": 0.5015625,
+      "accept_rate": 0.0
+    }
+  },
+  "confusion": {
+    "classes": [
+      "honest",
+      "depolarising",
+      "phase_damping",
+      "amplitude_damping",
+      "bit_flip",
+      "intercept_Z",
+      "intercept_X",
+      "intercept_Y",
+      "intercept_random",
+      "blind_forgery"
+    ],
+    "columns": [
+      "honest",
+      "depolarising",
+      "phase_damping",
+      "amplitude_damping",
+      "bit_flip",
+      "intercept_Z",
+      "intercept_X",
+      "intercept_Y",
+      "intercept_random",
+      "blind_forgery",
+      "INCONCLUSIVE"
+    ],
+    "matrix": {
+      "honest": {
+        "honest": 25,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 0
+      },
+      "depolarising": {
+        "honest": 0,
+        "depolarising": 49,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 1
+      },
+      "phase_damping": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 50,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 0
+      },
+      "amplitude_damping": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 46,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 4
+      },
+      "bit_flip": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 25,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 25
+      },
+      "intercept_Z": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 49,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 1
+      },
+      "intercept_X": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 25,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 25
+      },
+      "intercept_Y": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 50,
+        "intercept_random": 0,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 0
+      },
+      "intercept_random": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 48,
+        "blind_forgery": 0,
+        "INCONCLUSIVE": 2
+      },
+      "blind_forgery": {
+        "honest": 0,
+        "depolarising": 0,
+        "phase_damping": 0,
+        "amplitude_damping": 0,
+        "bit_flip": 0,
+        "intercept_Z": 0,
+        "intercept_X": 0,
+        "intercept_Y": 0,
+        "intercept_random": 0,
+        "blind_forgery": 24,
+        "INCONCLUSIVE": 1
+      }
+    },
+    "accuracy": {
+      "honest": 1.0,
+      "depolarising": 0.98,
+      "phase_damping": 1.0,
+      "amplitude_damping": 0.92,
+      "bit_flip": 0.5,
+      "intercept_Z": 0.98,
+      "intercept_X": 0.5,
+      "intercept_Y": 1.0,
+      "intercept_random": 0.96,
+      "blind_forgery": 0.96
+    },
+    "inconclusive_rate": {
+      "honest": 0.0,
+      "depolarising": 0.02,
+      "phase_damping": 0.0,
+      "amplitude_damping": 0.08,
+      "bit_flip": 0.5,
+      "intercept_Z": 0.02,
+      "intercept_X": 0.5,
+      "intercept_Y": 0.0,
+      "intercept_random": 0.04,
+      "blind_forgery": 0.04
+    },
+    "n_runs_per_condition": 25,
+    "signatures_per_session": 10,
+    "seed": 21260101
+  },
+  "chsh": {
+    "honest@0.0": {
+      "condition": "honest",
+      "strength": 0.0,
+      "S": 2.7805198268175424,
+      "sigma": 0.06428629564718281,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.6646464646464646,
+        "ab'": -0.6908396946564885,
+        "a'b": 0.7055214723926381,
+        "a'b'": 0.7195121951219512
+      },
+      "n_rounds": 2000
+    },
+    "depolarising@0.05": {
+      "condition": "depolarising",
+      "strength": 0.05,
+      "S": 2.6454090773925882,
+      "sigma": 0.06704054140375403,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.6242424242424243,
+        "ab'": -0.6450381679389313,
+        "a'b": 0.6850715746421268,
+        "a'b'": 0.6910569105691057
+      },
+      "n_rounds": 2000
+    },
+    "depolarising@0.15": {
+      "condition": "depolarising",
+      "strength": 0.15,
+      "S": 2.3684156202222435,
+      "sigma": 0.07204625439120457,
+      "secure": false,
+      "violates": true,
+      "E": {
+        "ab": 0.5434343434343434,
+        "ab'": -0.5916030534351145,
+        "a'b": 0.6073619631901841,
+        "a'b'": 0.6260162601626016
+      },
+      "n_rounds": 2000
+    },
+    "phase_damping@0.1": {
+      "condition": "phase_damping",
+      "strength": 0.1,
+      "S": 2.727524664964083,
+      "sigma": 0.06545142774783755,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.6646464646464646,
+        "ab'": -0.6908396946564885,
+        "a'b": 0.6809815950920245,
+        "a'b'": 0.6910569105691057
+      },
+      "n_rounds": 2000
+    },
+    "phase_damping@0.3": {
+      "condition": "phase_damping",
+      "strength": 0.3,
+      "S": 2.5725543422547212,
+      "sigma": 0.0685032964479472,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.6646464646464646,
+        "ab'": -0.6908396946564885,
+        "a'b": 0.5991820040899796,
+        "a'b'": 0.6178861788617886
+      },
+      "n_rounds": 2000
+    },
+    "amplitude_damping@0.1": {
+      "condition": "amplitude_damping",
+      "strength": 0.1,
+      "S": 2.5731293941686495,
+      "sigma": 0.06837742607577627,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.5797979797979798,
+        "ab'": -0.6335877862595419,
+        "a'b": 0.6646216768916156,
+        "a'b'": 0.6951219512195121
+      },
+      "n_rounds": 2000
+    },
+    "amplitude_damping@0.3": {
+      "condition": "amplitude_damping",
+      "strength": 0.3,
+      "S": 2.111902386689045,
+      "sigma": 0.07562748273513113,
+      "secure": false,
+      "violates": false,
+      "E": {
+        "ab": 0.4303030303030303,
+        "ab'": -0.48091603053435117,
+        "a'b": 0.5787321063394683,
+        "a'b'": 0.6219512195121951
+      },
+      "n_rounds": 2000
+    },
+    "bit_flip@0.05": {
+      "condition": "bit_flip",
+      "strength": 0.05,
+      "S": 2.619111853959188,
+      "sigma": 0.06735468075205514,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.5757575757575758,
+        "ab'": -0.6183206106870229,
+        "a'b": 0.7055214723926381,
+        "a'b'": 0.7195121951219512
+      },
+      "n_rounds": 2000
+    },
+    "bit_flip@0.15": {
+      "condition": "bit_flip",
+      "strength": 0.15,
+      "S": 2.3634175058984273,
+      "sigma": 0.07120828665974602,
+      "secure": false,
+      "violates": true,
+      "E": {
+        "ab": 0.4383838383838384,
+        "ab'": -0.5,
+        "a'b": 0.7055214723926381,
+        "a'b'": 0.7195121951219512
+      },
+      "n_rounds": 2000
+    },
+    "intercept_Z@0.3": {
+      "condition": "intercept_Z",
+      "strength": 0.3,
+      "S": 2.4348107730554704,
+      "sigma": 0.07002298099719531,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.7494949494949495,
+        "ab'": -0.732824427480916,
+        "a'b": 0.5419222903885481,
+        "a'b'": 0.4105691056910569
+      },
+      "n_rounds": 2000
+    },
+    "intercept_Z@1.0": {
+      "condition": "intercept_Z",
+      "strength": 1.0,
+      "S": 1.4121412243911737,
+      "sigma": 0.07852624782582952,
+      "secure": false,
+      "violates": false,
+      "E": {
+        "ab": 0.705050505050505,
+        "ab'": -0.6603053435114504,
+        "a'b": 0.006134969325153374,
+        "a'b'": 0.04065040650406504
+      },
+      "n_rounds": 2000
+    },
+    "intercept_X@0.3": {
+      "condition": "intercept_X",
+      "strength": 0.3,
+      "S": 2.515189152525884,
+      "sigma": 0.06898599410704548,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.5474747474747474,
+        "ab'": -0.5343511450381679,
+        "a'b": 0.7382413087934561,
+        "a'b'": 0.6951219512195121
+      },
+      "n_rounds": 2000
+    },
+    "intercept_X@1.0": {
+      "condition": "intercept_X",
+      "strength": 1.0,
+      "S": 1.3551484036444736,
+      "sigma": 0.07779136068118078,
+      "secure": false,
+      "violates": false,
+      "E": {
+        "ab": -0.010101010101010102,
+        "ab'": 0.019083969465648856,
+        "a'b": 0.6973415132924335,
+        "a'b'": 0.6869918699186992
+      },
+      "n_rounds": 2000
+    },
+    "intercept_Y@0.3": {
+      "condition": "intercept_Y",
+      "strength": 0.3,
+      "S": 2.0262330884059936,
+      "sigma": 0.07713972205357919,
+      "secure": false,
+      "violates": false,
+      "E": {
+        "ab": 0.47878787878787876,
+        "ab'": -0.5381679389312977,
+        "a'b": 0.5214723926380368,
+        "a'b'": 0.4878048780487805
+      },
+      "n_rounds": 2000
+    },
+    "intercept_Y@1.0": {
+      "condition": "intercept_Y",
+      "strength": 1.0,
+      "S": 0.052994272291041006,
+      "sigma": 0.08940321121013328,
+      "secure": false,
+      "violates": false,
+      "E": {
+        "ab": 0.04242424242424243,
+        "ab'": 0.007633587786259542,
+        "a'b": -0.06339468302658487,
+        "a'b'": -0.024390243902439025
+      },
+      "n_rounds": 2000
+    },
+    "intercept_random@0.3": {
+      "condition": "intercept_random",
+      "strength": 0.3,
+      "S": 2.2766836275413924,
+      "sigma": 0.07352686700591675,
+      "secure": false,
+      "violates": true,
+      "E": {
+        "ab": 0.5757575757575758,
+        "ab'": -0.5610687022900763,
+        "a'b": 0.6032719836400818,
+        "a'b'": 0.5365853658536586
+      },
+      "n_rounds": 2000
+    },
+    "intercept_random@1.0": {
+      "condition": "intercept_random",
+      "strength": 1.0,
+      "S": 0.9323005421357969,
+      "sigma": 0.08696146837183329,
+      "secure": false,
+      "violates": false,
+      "E": {
+        "ab": 0.22828282828282828,
+        "ab'": -0.22519083969465647,
+        "a'b": 0.19427402862985685,
+        "a'b'": 0.2845528455284553
+      },
+      "n_rounds": 2000
+    },
+    "blind_forgery@1.0": {
+      "condition": "blind_forgery",
+      "strength": 1.0,
+      "S": 2.7805198268175424,
+      "sigma": 0.06428629564718281,
+      "secure": true,
+      "violates": true,
+      "E": {
+        "ab": 0.6646464646464646,
+        "ab'": -0.6908396946564885,
+        "a'b": 0.7055214723926381,
+        "a'b'": 0.7195121951219512
+      },
+      "n_rounds": 2000
+    }
+  },
+  "verdicts": {
+    "honest@0.0": {
+      "decision": "ACCEPT",
+      "cause": "honest",
+      "instruments": {
+        "signature": {
+          "s_pooled": 0.0,
+          "accepted": true
+        },
+        "chsh": {
+          "S": 2.7861889756945883,
+          "sigma": 0.09067974896848895,
+          "secure": true,
+          "violates": true
+        },
+        "fingerprint": {
+          "e": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "n": {
+            "X": 863,
+            "Y": 885,
+            "Z": 812
+          },
+          "verdict": "honest",
+          "best": "honest",
+          "best_p": 1.0,
+          "runner_up": "phase_damping",
+          "runner_up_p": 6.24767775336151e-08
+        }
+      },
+      "reasons": [
+        "Signature mismatch s = 0.000 (below s_a)",
+        "CHSH S = 2.786 \u00b1 0.091 (entanglement intact)",
+        "Fingerprint: best honest (p=1.000), runner-up phase_damping (p=0.000)"
+      ]
+    },
+    "depolarising@0.15": {
+      "decision": "REJECT",
+      "cause": "depolarising",
+      "instruments": {
+        "signature": {
+          "s_pooled": 0.0859375,
+          "accepted": true
+        },
+        "chsh": {
+          "S": 2.368512721077018,
+          "sigma": 0.10197219446082414,
+          "secure": false,
+          "violates": true
+        },
+        "fingerprint": {
+          "e": {
+            "X": 0.09154113557358054,
+            "Y": 0.0847457627118644,
+            "Z": 0.06896551724137931
+          },
+          "n": {
+            "X": 863,
+            "Y": 885,
+            "Z": 812
+          },
+          "verdict": "depolarising",
+          "best": "depolarising",
+          "best_p": 0.290380110650482,
+          "runner_up": "intercept_random",
+          "runner_up_p": 0.013797057467982626
+        }
+      },
+      "reasons": [
+        "Signature mismatch s = 0.086 (below s_a)",
+        "CHSH S = 2.369 \u00b1 0.102 (entanglement degraded)",
+        "Fingerprint: best depolarising (p=0.290), runner-up intercept_random (p=0.014)"
+      ]
+    },
+    "phase_damping@0.3": {
+      "decision": "ACCEPT",
+      "cause": "phase_damping",
+      "instruments": {
+        "signature": {
+          "s_pooled": 0.06640625,
+          "accepted": true
+        },
+        "chsh": {
+          "S": 2.5701077587376293,
+          "sigma": 0.09666555971706338,
+          "secure": true,
+          "violates": true
+        },
+        "fingerprint": {
+          "e": {
+            "X": 0.09617612977983778,
+            "Y": 0.09265536723163842,
+            "Z": 0.0
+          },
+          "n": {
+            "X": 863,
+            "Y": 885,
+            "Z": 812
+          },
+          "verdict": "phase_damping",
+          "best": "phase_damping",
+          "best_p": 0.4120809883246713,
+          "runner_up": "intercept_Z",
+          "runner_up_p": 3.2734910069444695e-09
+        }
+      },
+      "reasons": [
+        "Signature mismatch s = 0.066 (below s_a)",
+        "CHSH S = 2.570 \u00b1 0.097 (entanglement intact)",
+        "Fingerprint: best phase_damping (p=0.412), runner-up intercept_Z (p=0.000)"
+      ]
+    },
+    "intercept_Z@1.0": {
+      "decision": "REJECT",
+      "cause": "intercept_Z",
+      "instruments": {
+        "signature": {
+          "s_pooled": 0.32421875,
+          "accepted": false
+        },
+        "chsh": {
+          "S": 1.637805481579658,
+          "sigma": 0.10771533699725147,
+          "secure": false,
+          "violates": false
+        },
+        "fingerprint": {
+          "e": {
+            "X": 0.48088064889918886,
+            "Y": 0.5005649717514125,
+            "Z": 0.0
+          },
+          "n": {
+            "X": 863,
+            "Y": 885,
+            "Z": 812
+          },
+          "verdict": "intercept_Z",
+          "best": "intercept_Z",
+          "best_p": 0.9637200477868682,
+          "runner_up": "intercept_random",
+          "runner_up_p": 9.529900515548746e-140
+        }
+      },
+      "reasons": [
+        "Signature mismatch s = 0.324 (at or above s_a)",
+        "CHSH S = 1.638 \u00b1 0.108 (entanglement degraded)",
+        "Fingerprint: best intercept_Z (p=0.964), runner-up intercept_random (p=0.000)"
+      ]
+    },
+    "intercept_random@1.0": {
+      "decision": "REJECT",
+      "cause": "intercept_random",
+      "instruments": {
+        "signature": {
+          "s_pooled": 0.34765625,
+          "accepted": false
+        },
+        "chsh": {
+          "S": 1.1840321396779634,
+          "sigma": 0.12082891267950165,
+          "secure": false,
+          "violates": false
+        },
+        "fingerprint": {
+          "e": {
+            "X": 0.3302433371958285,
+            "Y": 0.3220338983050847,
+            "Z": 0.3263546798029557
+          },
+          "n": {
+            "X": 863,
+            "Y": 885,
+            "Z": 812
+          },
+          "verdict": "intercept_random",
+          "best": "intercept_random",
+          "best_p": 0.8688913028455144,
+          "runner_up": "blind_forgery",
+          "runner_up_p": 5.926606568295426e-73
+        }
+      },
+      "reasons": [
+        "Signature mismatch s = 0.348 (at or above s_a)",
+        "CHSH S = 1.184 \u00b1 0.121 (entanglement degraded)",
+        "Fingerprint: best intercept_random (p=0.869), runner-up blind_forgery (p=0.000)"
+      ]
+    },
+    "blind_forgery@1.0": {
+      "decision": "REJECT",
+      "cause": "blind_forgery",
+      "instruments": {
+        "signature": {
+          "s_pooled": 0.52734375,
+          "accepted": false
+        },
+        "chsh": {
+          "S": 2.7861889756945883,
+          "sigma": 0.09067974896848895,
+          "secure": true,
+          "violates": true
+        },
+        "fingerprint": {
+          "e": {
+            "X": 0.5092592592592593,
+            "Y": 0.5217917675544794,
+            "Z": 0.5022988505747127
+          },
+          "n": {
+            "X": 864,
+            "Y": 826,
+            "Z": 870
+          },
+          "verdict": "blind_forgery",
+          "best": "blind_forgery",
+          "best_p": 0.593593785415748,
+          "runner_up": "intercept_random",
+          "runner_up_p": 4.729401336863942e-81
+        }
+      },
+      "reasons": [
+        "Signature mismatch s = 0.527 (at or above s_a)",
+        "CHSH S = 2.786 \u00b1 0.091 (entanglement intact)",
+        "Fingerprint: best blind_forgery (p=0.594), runner-up intercept_random (p=0.000)"
+      ]
+    }
+  },
+  "manifest": {
+    "seed": 20260101,
+    "quick": false,
+    "key_length": 256,
+    "n_profile_runs": 100,
+    "n_confusion_runs": 25,
+    "n_chsh_rounds": 2000,
+    "python": "3.11.9",
+    "qiskit": "1.2.4",
+    "qiskit_aer": "0.15.1",
+    "git_sha": "14d8bcc3a42f82b8467cc9cf39c03b8eb9d1a189",
+    "timestamp": "2026-09-29T16:12:33.848668+00:00",
+    "runtime_s": 371.1,
+    "results_sha256": "584402d6d8dc51757177f701c678a46236f7204781ea86c6c5258b68600e1fbc"
+  },
+  "tsirelson": 2.8284271247461903,
+  "chsh_secure_min": 2.4
+}

@@ -1,0 +1,15 @@
+{
+  "seed": 20260101,
+  "quick": false,
+  "key_length": 256,
+  "n_profile_runs": 100,
+  "n_confusion_runs": 25,
+  "n_chsh_rounds": 2000,
+  "python": "3.11.9",
+  "qiskit": "1.2.4",
+  "qiskit_aer": "0.15.1",
+  "git_sha": "14d8bcc3a42f82b8467cc9cf39c03b8eb9d1a189",
+  "timestamp": "2026-09-29T16:12:33.848668+00:00",
+  "runtime_s": 371.1,
+  "results_sha256": "584402d6d8dc51757177f701c678a46236f7204781ea86c6c5258b68600e1fbc"
+}
