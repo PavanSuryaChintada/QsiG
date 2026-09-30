@@ -3,10 +3,10 @@ Gate 3: at strength >= 0.3, Z-intercept is never attributed as depolarising, and
 Profiles and test sessions use disjoint seeds.
 """
 
-from qsentry.config import SEED, SESSION_SIGNATURES
-from qsentry.detect.fingerprinting import aggregate, attribute
-from qsentry.detect.profiles import build_reference_profiles
-from qsentry.protocol.run import run_protocol
+from qsig.config import SEED, SESSION_SIGNATURES
+from qsig.detect.fingerprinting import aggregate, attribute
+from qsig.detect.profiles import build_reference_profiles
+from qsig.protocol.run import run_protocol
 
 CONDITIONS = [("honest", 0.0), ("depolarising", 0.05), ("depolarising", 0.15),
               ("intercept_Z", 0.3), ("intercept_Z", 1.0)]

@@ -23,10 +23,10 @@ import matplotlib.pyplot as plt
 import qiskit
 import qiskit_aer
 
-from qsentry.config import CHSH_SECURE_MIN, KEY_LENGTH_L, SEED, TSIRELSON
-from qsentry.detect.chsh import chsh_rounds
-from qsentry.detect.engine import detect
-from qsentry.detect.profiles import build_reference_profiles
+from qsig.config import CHSH_SECURE_MIN, KEY_LENGTH_L, SEED, TSIRELSON
+from qsig.detect.chsh import chsh_rounds
+from qsig.detect.engine import detect
+from qsig.detect.profiles import build_reference_profiles
 
 from .exp1_confusion import run_confusion
 

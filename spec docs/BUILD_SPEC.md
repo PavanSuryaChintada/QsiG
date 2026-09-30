@@ -1,4 +1,4 @@
-# BUILD SPEC — QSENTRY
+# BUILD SPEC — QSIG
 
 File-by-file contract. Read `CLAUDE.md`, `docs/PHYSICS.md`, `docs/STATISTICS.md`, `docs/ATTACKS.md` first.
 
@@ -7,7 +7,7 @@ File-by-file contract. Read `CLAUDE.md`, `docs/PHYSICS.md`, `docs/STATISTICS.md`
 ## Layout
 
 ```
-qsentry/
+qsig/
 ├── config.py                  seeds, defaults, thresholds — single source
 ├── protocol/
 │   ├── states.py              the six Pauli eigenstates, prepare + measure

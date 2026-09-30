@@ -1,4 +1,4 @@
-# QSENTRY
+# QSIG
 
 **A live diagnostic instrument for quantum digital signature channels.**
 
@@ -118,12 +118,12 @@ docs/SITE_SPEC.md       the results website
 docs/DESIGN.md          design system
 docs/SUBMISSION.md      delivery table, 6 slides, video script, Q&A
 
-qsentry/protocol/       Bell, teleport, keys, sign, verify
-qsentry/channels/       noise models
-qsentry/attacks/        intercept, forgery, impersonation, replay, Grover, QAE
-qsentry/detect/         chsh, fingerprint, tomography, bayes, sprt, cusum, engine
-qsentry/analysis/       bounds, Helstrom, performance
-qsentry/experiments/    reproducible runs producing every figure
+qsig/protocol/       Bell, teleport, keys, sign, verify
+qsig/channels/       noise models
+qsig/attacks/        intercept, forgery, impersonation, replay, Grover, QAE
+qsig/detect/         chsh, fingerprint, tomography, bayes, sprt, cusum, engine
+qsig/analysis/       bounds, Helstrom, performance
+qsig/experiments/    reproducible runs producing every figure
 site/                   results frontend
 ```
 

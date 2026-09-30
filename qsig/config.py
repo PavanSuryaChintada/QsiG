@@ -1,5 +1,5 @@
 """
-QSENTRY — Configuration
+QSIG — Configuration
 Single source for seeds, defaults, and thresholds.
 Every module imports this. Every experiment records its seed in its output.
 """

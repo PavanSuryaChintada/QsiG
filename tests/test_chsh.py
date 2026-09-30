@@ -2,8 +2,8 @@
 Gate 2: noiseless Bell pairs reach Tsirelson; S never exceeds it beyond sampling noise.
 """
 
-from qsentry.config import SEED, TSIRELSON
-from qsentry.detect.chsh import chsh_rounds
+from qsig.config import SEED, TSIRELSON
+from qsig.detect.chsh import chsh_rounds
 
 CONDITIONS = [("honest", 0.0), ("depolarising", 0.15), ("phase_damping", 0.3),
               ("intercept_Z", 1.0), ("intercept_random", 1.0)]

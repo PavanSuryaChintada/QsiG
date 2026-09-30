@@ -46,7 +46,7 @@ function Nav() {
   }, []);
   return (
     <nav className="top"><div>
-      <b>QSENTRY</b>
+      <b>QSIG</b>
       {NAV.map(([id, t]) => <a key={id} href={`#${id}`} className={on === id ? "on" : ""}>{t}</a>)}
     </div></nav>
   );
@@ -91,7 +91,7 @@ function Compare() {
       <div className="panel" style={{ marginBottom: 14 }}>
         <div className="label">Typical QDS implementation</div>
         <Lane items={them} cls="them" />
-        <div className="label" style={{ marginTop: 20, color: "var(--i0)" }}>QSENTRY</div>
+        <div className="label" style={{ marginTop: 20, color: "var(--i0)" }}>QSIG</div>
         <Lane items={us} cls="us" />
       </div>
       <ThreeWay />
@@ -122,7 +122,7 @@ function ThreeWay() {
           <th style={{ width: "22%" }}>Capability</th>
           <th>Classical signatures<div className="muted" style={{ fontSize: 12 }}>RSA · ECDSA</div></th>
           <th>Typical QDS implementation<div className="muted" style={{ fontSize: 12 }}>threshold check</div></th>
-          <th className="us" style={{ color: "var(--i0)" }}>QSENTRY<div style={{ fontSize: 12, color: "var(--ok)" }}>live channel instrument</div></th>
+          <th className="us" style={{ color: "var(--i0)" }}>QSIG<div style={{ fontSize: 12, color: "var(--ok)" }}>live channel instrument</div></th>
         </tr></thead>
         <tbody>{CMP.map(([q, a, b, c]) => <tr key={q}><td>{q}</td>{cell(a)}{cell(b)}{cell(c, true)}</tr>)}</tbody>
       </table>
@@ -179,7 +179,7 @@ export default function App() {
           <div>
             <div className="label">SIH 2026 · PS 26141 · Quantum digital signature security</div>
             <h1>A verifier sees a 9% mismatch rate. Is that a noisy fibre, or an attacker?</h1>
-            <p className="lede">QSENTRY is a live diagnostic instrument for quantum digital signature channels. It proves the entanglement is intact, identifies what degraded the channel, and says openly when it can't tell.</p>
+            <p className="lede">QSIG is a live diagnostic instrument for quantum digital signature channels. It proves the entanglement is intact, identifies what degraded the channel, and says openly when it can't tell.</p>
             {data && (
               <div className="stats">
                 <div><b>{Object.keys(data.chsh).length}</b><span>channel conditions</span></div>
@@ -208,12 +208,12 @@ export default function App() {
           {data && <ThresholdExplorer data={data} />}
         </Section>
 
-        <Section id="existing" n="03 · COMPARISON" v="plain" light acc="#9A760C" title="Classical signatures vs typical QDS vs QSENTRY"
+        <Section id="existing" n="03 · COMPARISON" v="plain" light acc="#9A760C" title="Classical signatures vs typical QDS vs QSIG"
           sub="Typical QDS implementations are correct and complete, and they answer only one question: is the error rate too high? Here is how the three approaches compare.">
           <Compare />
         </Section>
 
-        <Section id="how" n="04 · STEP BY STEP" v="band" acc="var(--bz)" title="How QSENTRY works, one step at a time"
+        <Section id="how" n="04 · STEP BY STEP" v="band" acc="var(--bz)" title="How QSIG works, one step at a time"
           sub="Click Next to follow a signature from Alice to the verdict. Switch the scenario at any step: clean channel, noisy fibre, or an eavesdropper. Every chart in the tour is a measured result.">
           <div id="tour">{data && <GuidedTour data={data} />}</div>
         </Section>

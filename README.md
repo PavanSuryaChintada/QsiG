@@ -1,4 +1,4 @@
-# QSENTRY — Quantum Digital Signature Channel Diagnostics
+# QSIG — Quantum Digital Signature Channel Diagnostics
 
 **SIH 2026 · PS 26141 · Quantum-Inspired Cyber Threat Detection for Digital Signature Security**
 
@@ -47,7 +47,7 @@ The site is static React + TypeScript (Vite, Recharts). It reads only `site_data
 ## Layout
 
 ```
-qsentry/
+qsig/
   config.py            seeds, thresholds — single source
   protocol/            keys, states, teleport, sign, verify, run
   channels/noise.py    depolarising, phase/amplitude damping, bit/phase flip

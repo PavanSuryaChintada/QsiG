@@ -1,4 +1,4 @@
-# QSENTRY — pin exactly. Python 3.11, NOT 3.12 (qiskit-aer wheels lag).
+# QSIG — pin exactly. Python 3.11, NOT 3.12 (qiskit-aer wheels lag).
 # Commit the lockfile after first successful install:
 #   pip freeze > requirements.lock
 

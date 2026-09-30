@@ -20,7 +20,7 @@ brew install python@3.11 && python3.11 -m venv .venv
 sudo apt install python3.11 python3.11-venv && python3.11 -m venv .venv
 
 # conda
-conda create -n qsentry python=3.11 -y && conda activate qsentry
+conda create -n qsig python=3.11 -y && conda activate qsig
 ```
 
 ---
@@ -90,7 +90,7 @@ print('bell ok:', round(p00,3), round(p11,3))
 
 ```bash
 python -c "
-from qsentry.detect.chsh import chsh_rounds
+from qsig.detect.chsh import chsh_rounds
 r = chsh_rounds(n_rounds=4000, seed=42)
 print(f'S = {r.S:.4f} +/- {r.sigma:.4f}')
 assert r.S <= 2.8285, f'S={r.S} EXCEEDS TSIRELSON — estimator bug'
@@ -113,8 +113,8 @@ print('chsh ok')
 
 ```bash
 python -c "
-from qsentry.protocol.verify import run_protocol
-from qsentry.attacks.intercept import intercept_resend
+from qsig.protocol.verify import run_protocol
+from qsig.attacks.intercept import intercept_resend
 
 r = run_protocol(attack=intercept_resend(basis='Z', strength=1.0), seed=42)
 e = r.s_by_basis

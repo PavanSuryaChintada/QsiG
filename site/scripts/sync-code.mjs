@@ -8,13 +8,13 @@ import { fileURLToPath } from "node:url";
 const site = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const repo = resolve(site, "..");
 const FILES = [
-  "qsentry/protocol/keys.py",
-  "qsentry/protocol/teleport.py",
-  "qsentry/protocol/verify.py",
-  "qsentry/attacks/intercept.py",
-  "qsentry/detect/chsh.py",
-  "qsentry/detect/fingerprinting.py",
-  "qsentry/detect/engine.py",
+  "qsig/protocol/keys.py",
+  "qsig/protocol/teleport.py",
+  "qsig/protocol/verify.py",
+  "qsig/attacks/intercept.py",
+  "qsig/detect/chsh.py",
+  "qsig/detect/fingerprinting.py",
+  "qsig/detect/engine.py",
   "tests/test_chsh.py",
   "tests/test_reproduce.py",
 ];

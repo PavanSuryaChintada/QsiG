@@ -170,7 +170,7 @@ A full page. Not a footnote.
 ## 9. Page 6 — Reproduce
 
 ```bash
-git clone <repo> && cd qsentry
+git clone <repo> && cd qsig
 pip install -r requirements.txt
 python -m experiments.run_all --seed 20260101
 ```

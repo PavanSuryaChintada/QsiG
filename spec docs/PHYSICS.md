@@ -252,7 +252,7 @@ Monitor the round-trip latency distribution. An attacker in the loop adds detect
 
 ---
 
-## 6. Channel models — `qsentry/channels/`
+## 6. Channel models — `qsig/channels/`
 
 | Channel | Action | Structural signature |
 |---|---|---|

@@ -1,4 +1,4 @@
-# CLAUDE.md — Build Rules for QSENTRY
+# CLAUDE.md — Build Rules for QSIG
 
 > Read completely before writing code. Then `docs/PHYSICS.md`, then the spec for whatever you are building.
 
@@ -107,7 +107,7 @@ pytest
 ## 5. Layout
 
 ```
-qsentry/
+qsig/
 ├── CLAUDE.md
 ├── docs/
 │   ├── PHYSICS.md       # protocol, CHSH, tomography, fingerprint — READ SECOND
@@ -121,7 +121,7 @@ qsentry/
 │   ├── DESIGN.md        # design system
 │   └── SUBMISSION.md    # delivery table, 6 slides, video script, Q&A
 ├── site/BUILD_GUIDE.md  # how to build the frontend, with code
-├── qsentry/
+├── qsig/
 │   ├── protocol/ channels/ attacks/ detect/ analysis/ experiments/
 ├── tests/
 ├── results/             # generated: figures, tables, profiles, JSON for the site

@@ -2,8 +2,8 @@
 Gate 1: honest signature accepted 100% on a noiseless channel, 500 seeded runs, all three bases.
 """
 
-from qsentry.config import SEED
-from qsentry.protocol.run import run_protocol
+from qsig.config import SEED
+from qsig.protocol.run import run_protocol
 
 
 def test_honest_accepted_noiseless():

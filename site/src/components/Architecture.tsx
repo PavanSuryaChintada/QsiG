@@ -14,10 +14,10 @@ const Lane = ({ y, text, c = C.i2 }: any) => <g><rect x="10" y={y - 11} width="4
 export function Architecture() {
   return (
     <div className="panel scroll">
-      <svg viewBox="0 0 1100 500" width="100%" style={{ minWidth: 780 }} role="img" aria-label="QSENTRY system architecture">
+      <svg viewBox="0 0 1100 500" width="100%" style={{ minWidth: 780 }} role="img" aria-label="QSIG system architecture">
         <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill={C.i2} /></marker></defs>
 
-        <Lane y={22} c={BLUE} text="1 · PROTOCOL — QISKIT CIRCUITS (qsentry/protocol, channels, attacks)" />
+        <Lane y={22} c={BLUE} text="1 · PROTOCOL — QISKIT CIRCUITS (qsig/protocol, channels, attacks)" />
         <Box x={10} y={35} w={180} stroke={BLUE} title="Alice · keys" lines={["6 Pauli eigenstates", "basis label kept"]} />
         <Box x={230} y={35} w={200} stroke={BLUE} title="Teleportation" lines={["Bell pair |Φ⁺⟩", "full 3-qubit circuit"]} />
         <Box x={470} y={35} w={210} title="Travelling qubit" lines={["noise channel (Kraus)", "Eve: mid-circuit measure"]} stroke={C.breach} dashed />
@@ -25,7 +25,7 @@ export function Architecture() {
         <Box x={930} y={35} w={160} stroke={BLUE} title="Mismatch vector" lines={["e_X · e_Y · e_Z", "+ counts per basis"]} />
         <Arrow d="M190,75 L228,75" /><Arrow d="M430,75 L468,75" /><Arrow d="M680,75 L718,75" /><Arrow d="M890,75 L928,75" />
 
-        <Lane y={175} c={C.secure} text="2 · INSTRUMENTS — STATISTICS, NO MACHINE LEARNING (qsentry/detect)" />
+        <Lane y={175} c={C.secure} text="2 · INSTRUMENTS — STATISTICS, NO MACHINE LEARNING (qsig/detect)" />
         <Box x={230} y={190} w={260} h={96} title="I1 · CHSH monitor" lines={["Bell test on the same channel", "S ± σ  vs  2 and 2√2", "veto if entanglement degraded"]} stroke={C.secure} fill={C.g1} />
         <Box x={540} y={190} w={260} h={96} title="I2 · Basis fingerprint" lines={["χ² vs measured profiles", "best + runner-up + p-values", "INCONCLUSIVE if not separated"]} stroke={C.secure} fill={C.g1} />
         <Box x={850} y={190} w={240} h={96} title="Detection engine" lines={["any instrument may veto", "ACCEPT / REJECT /", "INCONCLUSIVE + reasons"]} stroke={C.i0} fill={C.g1} />

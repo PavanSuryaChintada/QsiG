@@ -9,9 +9,9 @@ seed range, so accuracy is never measured on the data that built the profiles.
 from collections import Counter
 from typing import Dict, List, Tuple
 
-from qsentry.config import SESSION_SIGNATURES
-from qsentry.detect.fingerprinting import aggregate, attribute
-from qsentry.protocol.run import run_protocol
+from qsig.config import SESSION_SIGNATURES
+from qsig.detect.fingerprinting import aggregate, attribute
+from qsig.protocol.run import run_protocol
 
 HELD_OUT_OFFSET = 1_000_000
 

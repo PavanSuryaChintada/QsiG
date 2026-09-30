@@ -2,9 +2,9 @@
 Gate 6: same seed -> identical results.
 """
 
-from qsentry.config import SEED
-from qsentry.detect.chsh import chsh_rounds
-from qsentry.protocol.run import run_protocol
+from qsig.config import SEED
+from qsig.detect.chsh import chsh_rounds
+from qsig.protocol.run import run_protocol
 
 
 def test_same_seed_identical():

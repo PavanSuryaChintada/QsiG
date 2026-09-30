@@ -1,4 +1,4 @@
-# DESIGN — QSENTRY
+# DESIGN — QSIG
 
 Visual and interaction spec for the results site and any console. Tokens are locked.
 

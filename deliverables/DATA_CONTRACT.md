@@ -302,7 +302,7 @@ All files land in `site/public/data/`, written by `experiments/run_all.py`.
 ```json
 {
   "seed": 20260101,
-  "qsentry": {
+  "qsig": {
     "qubits_per_signature": 512,
     "classical_bits_per_signature": 1024,
     "verification_time_ms": 41.2,

@@ -1,22 +1,22 @@
 // Real source files, bundled at build time. Snippets are cut from these, never retyped.
-import keys from "./py/qsentry/protocol/keys.py?raw";
-import teleport from "./py/qsentry/protocol/teleport.py?raw";
-import verify from "./py/qsentry/protocol/verify.py?raw";
-import intercept from "./py/qsentry/attacks/intercept.py?raw";
-import chsh from "./py/qsentry/detect/chsh.py?raw";
-import fingerprinting from "./py/qsentry/detect/fingerprinting.py?raw";
-import engine from "./py/qsentry/detect/engine.py?raw";
+import keys from "./py/qsig/protocol/keys.py?raw";
+import teleport from "./py/qsig/protocol/teleport.py?raw";
+import verify from "./py/qsig/protocol/verify.py?raw";
+import intercept from "./py/qsig/attacks/intercept.py?raw";
+import chsh from "./py/qsig/detect/chsh.py?raw";
+import fingerprinting from "./py/qsig/detect/fingerprinting.py?raw";
+import engine from "./py/qsig/detect/engine.py?raw";
 import testChsh from "./py/tests/test_chsh.py?raw";
 import testReproduce from "./py/tests/test_reproduce.py?raw";
 
 const FILES: Record<string, string> = {
-  "qsentry/protocol/keys.py": keys,
-  "qsentry/protocol/teleport.py": teleport,
-  "qsentry/protocol/verify.py": verify,
-  "qsentry/attacks/intercept.py": intercept,
-  "qsentry/detect/chsh.py": chsh,
-  "qsentry/detect/fingerprinting.py": fingerprinting,
-  "qsentry/detect/engine.py": engine,
+  "qsig/protocol/keys.py": keys,
+  "qsig/protocol/teleport.py": teleport,
+  "qsig/protocol/verify.py": verify,
+  "qsig/attacks/intercept.py": intercept,
+  "qsig/detect/chsh.py": chsh,
+  "qsig/detect/fingerprinting.py": fingerprinting,
+  "qsig/detect/engine.py": engine,
   "tests/test_chsh.py": testChsh,
   "tests/test_reproduce.py": testReproduce,
 };
@@ -35,19 +35,19 @@ export function extract(file: string, fn: string): { code: string; line: number 
 export type Snippet = { id: string; title: string; file: string; fn: string; why: string };
 
 export const SNIPPETS: Snippet[] = [
-  { id: "keys", title: "Generate the key", file: "qsentry/protocol/keys.py", fn: "generate_key",
+  { id: "keys", title: "Generate the key", file: "qsig/protocol/keys.py", fn: "generate_key",
     why: "A seeded random choice of basis and eigenvalue for every position. The basis label stays attached, so every instrument can sort errors by basis." },
-  { id: "teleport", title: "Teleport over the channel", file: "qsentry/protocol/teleport.py", fn: "teleport_circuit",
+  { id: "teleport", title: "Teleport over the channel", file: "qsig/protocol/teleport.py", fn: "teleport_circuit",
     why: "The full 3-qubit teleportation circuit. Noise and Eve are inserted only on q2, the travelling qubit, which is where they occur in reality." },
-  { id: "intercept", title: "Eve: intercept and resend", file: "qsentry/attacks/intercept.py", fn: "apply_intercept",
+  { id: "intercept", title: "Eve: intercept and resend", file: "qsig/attacks/intercept.py", fn: "apply_intercept",
     why: "Eve is a real mid-circuit measurement: rotate into her basis, measure, rotate back. Her fingerprint emerges from the physics, not from a formula." },
-  { id: "verify", title: "Count errors per basis", file: "qsentry/protocol/verify.py", fn: "verify",
+  { id: "verify", title: "Count errors per basis", file: "qsig/protocol/verify.py", fn: "verify",
     why: "Returns s_by_basis, the vector [e_X, e_Y, e_Z], alongside the usual pooled rate. That vector is the core of the method." },
-  { id: "chsh", title: "CHSH entanglement monitor", file: "qsentry/detect/chsh.py", fn: "chsh_rounds",
+  { id: "chsh", title: "CHSH entanglement monitor", file: "qsig/detect/chsh.py", fn: "chsh_rounds",
     why: "Estimates the four correlations and S ± σ from real measurement shots, and asserts the Tsirelson bound: exceeding 2√2 would be a bug." },
-  { id: "attribute", title: "χ² attribution", file: "qsentry/detect/fingerprinting.py", fn: "attribute",
+  { id: "attribute", title: "χ² attribution", file: "qsig/detect/fingerprinting.py", fn: "attribute",
     why: "Ranks every cause by χ² against measured profiles. It returns INCONCLUSIVE when nothing fits or the top two aren't separated." },
-  { id: "engine", title: "Verdict engine", file: "qsentry/detect/engine.py", fn: "detect",
+  { id: "engine", title: "Verdict engine", file: "qsig/detect/engine.py", fn: "detect",
     why: "Combines the instruments. Any of them can veto, and every verdict carries human-readable reasons." },
   { id: "test", title: "Release gate: Tsirelson", file: "tests/test_chsh.py", fn: "test_never_exceeds_tsirelson",
     why: "A test that fails the build if any condition ever reports S above the physical maximum." },
